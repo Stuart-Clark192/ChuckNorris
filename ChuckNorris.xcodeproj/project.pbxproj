@@ -13,6 +13,8 @@
 		172B00AF261B790A0034BAAA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 172B00AE261B790A0034BAAA /* Preview Assets.xcassets */; };
 		172B00BA261B790A0034BAAA /* ChuckNorrisTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172B00B9261B790A0034BAAA /* ChuckNorrisTests.swift */; };
 		172B00C5261B790A0034BAAA /* ChuckNorrisUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172B00C4261B790A0034BAAA /* ChuckNorrisUITests.swift */; };
+		172B00DB261B79AA0034BAAA /* Joke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172B00DA261B79AA0034BAAA /* Joke.swift */; };
+		172B00E3261B79C10034BAAA /* Jokes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172B00E2261B79C10034BAAA /* Jokes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,8 @@
 		172B00C0261B790A0034BAAA /* ChuckNorrisUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChuckNorrisUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		172B00C4261B790A0034BAAA /* ChuckNorrisUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChuckNorrisUITests.swift; sourceTree = "<group>"; };
 		172B00C6261B790A0034BAAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		172B00DA261B79AA0034BAAA /* Joke.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Joke.swift; sourceTree = "<group>"; };
+		172B00E2261B79C10034BAAA /* Jokes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jokes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +99,8 @@
 		172B00A6261B79090034BAAA /* ChuckNorris */ = {
 			isa = PBXGroup;
 			children = (
+				172B00E7261B79D70034BAAA /* Network */,
+				172B00D6261B79780034BAAA /* Model */,
 				172B00A7261B79090034BAAA /* ChuckNorrisApp.swift */,
 				172B00A9261B79090034BAAA /* ContentView.swift */,
 				172B00AB261B790A0034BAAA /* Assets.xcassets */,
@@ -128,6 +134,22 @@
 				172B00C6261B790A0034BAAA /* Info.plist */,
 			);
 			path = ChuckNorrisUITests;
+			sourceTree = "<group>";
+		};
+		172B00D6261B79780034BAAA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				172B00DA261B79AA0034BAAA /* Joke.swift */,
+				172B00E2261B79C10034BAAA /* Jokes.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		172B00E7261B79D70034BAAA /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,6 +283,8 @@
 			files = (
 				172B00AA261B79090034BAAA /* ContentView.swift in Sources */,
 				172B00A8261B79090034BAAA /* ChuckNorrisApp.swift in Sources */,
+				172B00E3261B79C10034BAAA /* Jokes.swift in Sources */,
+				172B00DB261B79AA0034BAAA /* Joke.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
