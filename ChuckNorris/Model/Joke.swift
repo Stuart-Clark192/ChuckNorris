@@ -5,7 +5,7 @@
 //  Created by Stuart on 05/04/2021.
 //
 
-struct Joke: Decodable {
+public struct Joke: Decodable {
     
     let jokeId: Int
     let joke: String
