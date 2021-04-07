@@ -9,18 +9,18 @@ import XCTest
 @testable import ChuckNorris
 
 class String_ExtensionsTests: XCTestCase {
-
-    func test_stringWithValidURL_ReturnsTrueForIsValidURL() {
+    
+    func test_callingSanatisedQuotedString_removesQuotePlaceholders() {
         
-        let sut = "http://www.anyURL.com"
+        let sut = "And the &quot;boat&quot; sank"
         
-        XCTAssertTrue(sut.isValidURL)
+        XCTAssertEqual(sut.sanatisedQuotedString, "And the 'boat' sank")
     }
     
-    func test_stringWithInvalidURL_ReturnsFalseForIsValidURL() {
+    func test_callingSanatisedNonQuotedString_doesNotChangeString() {
         
-        let sut = "just a regular string"
+        let sut = "And the boat sank"
         
-        XCTAssertFalse(sut.isValidURL)
+        XCTAssertEqual(sut.sanatisedQuotedString, "And the boat sank")
     }
 }
