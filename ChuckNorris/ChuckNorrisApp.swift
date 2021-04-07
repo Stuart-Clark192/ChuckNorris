@@ -11,7 +11,8 @@ import SwiftUI
 struct ChuckNorrisApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            let viewModel = JokesUIComposer.makeJokesViewModel()
+            JokesView(viewModel: viewModel)
         }
     }
 }

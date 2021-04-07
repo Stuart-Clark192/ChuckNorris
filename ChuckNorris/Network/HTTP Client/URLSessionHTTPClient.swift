@@ -15,6 +15,7 @@ public class URLSessionHTTPClient: HTTPClient {
     private var session: URLSession {
         
         let configuration = URLSessionConfiguration.ephemeral
+        configuration.timeoutIntervalForRequest = 20
         return URLSession(configuration: configuration)
     }
     
@@ -22,7 +23,6 @@ public class URLSessionHTTPClient: HTTPClient {
     
     public func getJokes(from url: URL) -> AnyPublisher<Jokes, Error> {
         session.dataTaskPublisher(for: url)
-            .retry(1)
             .receive(on: sessionProcessingQueue)
             .tryMap() { element -> Data in
                 guard let response = element.response as? HTTPURLResponse,

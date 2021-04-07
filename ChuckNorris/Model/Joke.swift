@@ -7,13 +7,8 @@
 
 public struct Joke: Decodable {
     
-    let jokeId: Int
-    let joke: String
-    let categories: [String]
+    public let id: Int
+    public let joke: String
+    public let categories: [String]
     
-    enum CodingKeys: String, CodingKey {
-        case jokeId = "id"
-        case joke
-        case categories
-    }
 }
