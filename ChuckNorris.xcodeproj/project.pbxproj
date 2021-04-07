@@ -32,6 +32,7 @@
 		172B015D261D89310034BAAA /* JokeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172B015C261D89310034BAAA /* JokeViewModel.swift */; };
 		172B0162261D8A810034BAAA /* ErrorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172B0161261D8A810034BAAA /* ErrorViewModel.swift */; };
 		172B0168261D96220034BAAA /* JokesViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172B0167261D96220034BAAA /* JokesViewModelTests.swift */; };
+		172B0170261DFD5D0034BAAA /* ErrorViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172B016F261DFD5D0034BAAA /* ErrorViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +84,7 @@
 		172B015C261D89310034BAAA /* JokeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeViewModel.swift; sourceTree = "<group>"; };
 		172B0161261D8A810034BAAA /* ErrorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorViewModel.swift; sourceTree = "<group>"; };
 		172B0167261D96220034BAAA /* JokesViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokesViewModelTests.swift; sourceTree = "<group>"; };
+		172B016F261DFD5D0034BAAA /* ErrorViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -271,6 +273,7 @@
 			isa = PBXGroup;
 			children = (
 				172B0167261D96220034BAAA /* JokesViewModelTests.swift */,
+				172B016F261DFD5D0034BAAA /* ErrorViewModelTests.swift */,
 			);
 			path = ViewModelTests;
 			sourceTree = "<group>";
@@ -429,6 +432,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				172B010E261B822E0034BAAA /* String+ExtensionsTests.swift in Sources */,
+				172B0170261DFD5D0034BAAA /* ErrorViewModelTests.swift in Sources */,
 				172B0128261B8D520034BAAA /* XCTestCase+MemoryLeakTracking.swift in Sources */,
 				172B0122261B88F70034BAAA /* JokesAPITests.swift in Sources */,
 				172B011D261B84970034BAAA /* HTTPClientSpy.swift in Sources */,
